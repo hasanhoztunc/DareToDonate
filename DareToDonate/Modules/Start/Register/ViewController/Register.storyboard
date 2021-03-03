@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="Fhg-78-Uk4">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="wz8-KH-Fbw" customClass="RegisterViewController" customModule="DareToDonate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="maO-Cp-Ggx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="saM-NE-9bc">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CP5-e4-FfB">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="8gC-rT-zaL">
+                                                <rect key="frame" x="173" y="66" width="68" height="102"/>
+                                                <color key="tintColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="8gC-rT-zaL" secondAttribute="height" multiplier="2:3" id="RKx-mb-LjY"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dare To Donate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQE-Pm-SXG">
+                                                <rect key="frame" x="20" y="175" width="374" height="29"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="ZQE-Pm-SXG" secondAttribute="height" multiplier="13:1" id="cgt-D0-L7V"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="22"/>
+                                                <color key="textColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ez7-Al-3h3" customClass="UIRoundedTextField" customModule="DareToDonate" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="254" width="374" height="59.5"/>
+                                                <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="Ez7-Al-3h3" secondAttribute="height" multiplier="6.25:1" id="qgL-Gt-G2c"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KLP-Ff-Rh7" customClass="UIRoundedTextField" customModule="DareToDonate" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="331.5" width="374" height="60"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UUe-4J-gMG" customClass="UIRoundedTextField" customModule="DareToDonate" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="409.5" width="374" height="60"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ieJ-B7-zkb" customClass="UIRoundedTextField" customModule="DareToDonate" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="487.5" width="374" height="59.5"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Blood Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMm-LC-4o5" customClass="UIRoundedTextField" customModule="DareToDonate" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="565" width="374" height="60"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Location" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="omt-kt-cxA" customClass="UIRoundedTextField" customModule="DareToDonate" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="643" width="374" height="60"/>
+                                                <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0G-wG-M2k" customClass="UIRoundedButton" customModule="DareToDonate" customModuleProvider="target">
+                                                <rect key="frame" x="20" y="756" width="374" height="59.5"/>
+                                                <color key="backgroundColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="u0G-wG-M2k" secondAttribute="height" multiplier="6.25:1" id="F5D-kP-ZqN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="22"/>
+                                                <state key="normal" title="REGISTER">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="Z4K-Qe-0Zk">
+                                                <rect key="frame" x="20" y="841.5" width="374" height="29"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Already have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="PLY-Hc-pn9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="239" height="29"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="29" id="ZUO-u7-rab"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                                                        <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="INK-gu-zpM">
+                                                        <rect key="frame" x="270" y="0.0" width="104" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                                                        <state key="normal" title="Log In">
+                                                            <color key="titleColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="INK-gu-zpM" firstAttribute="height" secondItem="PLY-Hc-pn9" secondAttribute="height" id="Tnl-iS-eBC"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="8gC-rT-zaL" firstAttribute="top" secondItem="CP5-e4-FfB" secondAttribute="top" constant="66" id="0uD-5y-z6c"/>
+                                            <constraint firstItem="ieJ-B7-zkb" firstAttribute="width" secondItem="ieJ-B7-zkb" secondAttribute="height" multiplier="6.25:1" id="1Y6-bx-Hdk"/>
+                                            <constraint firstItem="ZQE-Pm-SXG" firstAttribute="leading" secondItem="CP5-e4-FfB" secondAttribute="leading" constant="20" id="6up-Ri-MgF"/>
+                                            <constraint firstItem="TMm-LC-4o5" firstAttribute="top" secondItem="ieJ-B7-zkb" secondAttribute="bottom" constant="18" id="77g-ha-thE"/>
+                                            <constraint firstItem="omt-kt-cxA" firstAttribute="width" secondItem="omt-kt-cxA" secondAttribute="height" multiplier="6.25:1" id="7EN-sX-UPg"/>
+                                            <constraint firstItem="UUe-4J-gMG" firstAttribute="leading" secondItem="CP5-e4-FfB" secondAttribute="leading" constant="20" id="B68-zu-PNG"/>
+                                            <constraint firstAttribute="trailing" secondItem="omt-kt-cxA" secondAttribute="trailing" constant="20" id="BXU-p8-RrV"/>
+                                            <constraint firstAttribute="trailing" secondItem="Ez7-Al-3h3" secondAttribute="trailing" constant="20" id="Bbi-Fi-iCX"/>
+                                            <constraint firstItem="Z4K-Qe-0Zk" firstAttribute="leading" secondItem="CP5-e4-FfB" secondAttribute="leading" constant="20" id="E4g-Ah-MN0"/>
+                                            <constraint firstItem="UUe-4J-gMG" firstAttribute="top" secondItem="KLP-Ff-Rh7" secondAttribute="bottom" constant="18" id="Jd9-QZ-uhT"/>
+                                            <constraint firstAttribute="trailing" secondItem="8gC-rT-zaL" secondAttribute="trailing" constant="173" id="LOV-3g-11Y"/>
+                                            <constraint firstItem="TMm-LC-4o5" firstAttribute="leading" secondItem="CP5-e4-FfB" secondAttribute="leading" constant="20" id="LiU-cL-00o"/>
+                                            <constraint firstAttribute="trailing" secondItem="UUe-4J-gMG" secondAttribute="trailing" constant="20" id="NgN-qh-IBJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="u0G-wG-M2k" secondAttribute="trailing" constant="20" id="SHl-Nx-pkX"/>
+                                            <constraint firstItem="omt-kt-cxA" firstAttribute="leading" secondItem="CP5-e4-FfB" secondAttribute="leading" constant="20" id="TRr-h8-syl"/>
+                                            <constraint firstAttribute="trailing" secondItem="Z4K-Qe-0Zk" secondAttribute="trailing" constant="20" id="Unb-jJ-QFq"/>
+                                            <constraint firstItem="Z4K-Qe-0Zk" firstAttribute="top" secondItem="u0G-wG-M2k" secondAttribute="bottom" constant="26" id="WNn-E9-0BZ"/>
+                                            <constraint firstItem="ieJ-B7-zkb" firstAttribute="leading" secondItem="CP5-e4-FfB" secondAttribute="leading" constant="20" id="X8d-C5-OQG"/>
+                                            <constraint firstAttribute="trailing" secondItem="TMm-LC-4o5" secondAttribute="trailing" constant="20" id="ZAm-1W-XPP"/>
+                                            <constraint firstItem="8gC-rT-zaL" firstAttribute="leading" secondItem="CP5-e4-FfB" secondAttribute="leading" constant="173" id="ZId-rK-7qU"/>
+                                            <constraint firstItem="ZQE-Pm-SXG" firstAttribute="top" secondItem="8gC-rT-zaL" secondAttribute="bottom" constant="7" id="bGj-Ui-fIK"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZQE-Pm-SXG" secondAttribute="trailing" constant="20" id="br6-2V-Zbc"/>
+                                            <constraint firstAttribute="trailing" secondItem="ieJ-B7-zkb" secondAttribute="trailing" constant="20" id="cFV-la-Y36"/>
+                                            <constraint firstItem="Ez7-Al-3h3" firstAttribute="top" secondItem="ZQE-Pm-SXG" secondAttribute="bottom" constant="50" id="g8U-7x-HPe"/>
+                                            <constraint firstItem="TMm-LC-4o5" firstAttribute="width" secondItem="TMm-LC-4o5" secondAttribute="height" multiplier="6.25:1" id="gcb-QW-dO0"/>
+                                            <constraint firstItem="u0G-wG-M2k" firstAttribute="top" secondItem="omt-kt-cxA" secondAttribute="bottom" constant="53" id="hQ3-ok-rna"/>
+                                            <constraint firstItem="KLP-Ff-Rh7" firstAttribute="top" secondItem="Ez7-Al-3h3" secondAttribute="bottom" constant="18" id="jLD-xj-oiZ"/>
+                                            <constraint firstAttribute="height" constant="896" id="jaI-cZ-UpJ"/>
+                                            <constraint firstItem="UUe-4J-gMG" firstAttribute="width" secondItem="UUe-4J-gMG" secondAttribute="height" multiplier="6.25:1" id="lR0-mM-LDy"/>
+                                            <constraint firstItem="u0G-wG-M2k" firstAttribute="leading" secondItem="CP5-e4-FfB" secondAttribute="leading" constant="20" id="nCM-O3-pUP"/>
+                                            <constraint firstItem="Ez7-Al-3h3" firstAttribute="leading" secondItem="CP5-e4-FfB" secondAttribute="leading" constant="20" id="okf-i8-rcA"/>
+                                            <constraint firstItem="ieJ-B7-zkb" firstAttribute="top" secondItem="UUe-4J-gMG" secondAttribute="bottom" constant="18" id="oqo-I2-ws4"/>
+                                            <constraint firstAttribute="trailing" secondItem="KLP-Ff-Rh7" secondAttribute="trailing" constant="20" id="ov2-QV-EiA"/>
+                                            <constraint firstItem="KLP-Ff-Rh7" firstAttribute="width" secondItem="KLP-Ff-Rh7" secondAttribute="height" multiplier="6.25:1" id="s3w-fp-DeB"/>
+                                            <constraint firstItem="KLP-Ff-Rh7" firstAttribute="leading" secondItem="CP5-e4-FfB" secondAttribute="leading" constant="20" id="t3P-H7-Qp0"/>
+                                            <constraint firstItem="omt-kt-cxA" firstAttribute="top" secondItem="TMm-LC-4o5" secondAttribute="bottom" constant="18" id="zIB-si-viX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CP5-e4-FfB" firstAttribute="leading" secondItem="saM-NE-9bc" secondAttribute="leading" id="IaS-NH-lT3"/>
+                                    <constraint firstItem="CP5-e4-FfB" firstAttribute="top" secondItem="saM-NE-9bc" secondAttribute="top" id="SuK-bR-THn"/>
+                                    <constraint firstAttribute="bottom" secondItem="CP5-e4-FfB" secondAttribute="bottom" id="bod-T3-AoD"/>
+                                    <constraint firstAttribute="trailing" secondItem="CP5-e4-FfB" secondAttribute="trailing" id="mIc-XW-Qkd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zah-vW-7E1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="saM-NE-9bc" firstAttribute="bottom" secondItem="maO-Cp-Ggx" secondAttribute="bottom" id="Cev-bs-G6t"/>
+                            <constraint firstItem="zah-vW-7E1" firstAttribute="trailing" secondItem="saM-NE-9bc" secondAttribute="trailing" id="Jbc-Fq-Jqp"/>
+                            <constraint firstAttribute="top" secondItem="saM-NE-9bc" secondAttribute="top" id="Nfb-jC-Sht"/>
+                            <constraint firstItem="CP5-e4-FfB" firstAttribute="width" secondItem="maO-Cp-Ggx" secondAttribute="width" id="OZl-70-pb8"/>
+                            <constraint firstItem="saM-NE-9bc" firstAttribute="leading" secondItem="zah-vW-7E1" secondAttribute="leading" id="tFo-cW-ROQ"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="896"/>
+                    <connections>
+                        <outlet property="bloodTypeTextField" destination="TMm-LC-4o5" id="1Jb-J0-VcI"/>
+                        <outlet property="emailTextField" destination="KLP-Ff-Rh7" id="lGh-tw-xix"/>
+                        <outlet property="firstLastNameTextField" destination="Ez7-Al-3h3" id="aZL-or-9pp"/>
+                        <outlet property="locationTextField" destination="omt-kt-cxA" id="ovM-ch-QTf"/>
+                        <outlet property="loginButton" destination="INK-gu-zpM" id="22S-S4-W4o"/>
+                        <outlet property="passwordTextField" destination="UUe-4J-gMG" id="XsP-L8-07z"/>
+                        <outlet property="phoneNumberTextField" destination="ieJ-B7-zkb" id="BLQ-3A-Omv"/>
+                        <outlet property="registerButton" destination="u0G-wG-M2k" id="dME-DG-9Oy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fky-yp-4aS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="152.67857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash-Logo" width="114" height="171"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

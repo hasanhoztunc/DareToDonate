@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Membership Type Selection View Controller-->
+        <scene sceneID="7Ta-7f-NYF">
+            <objects>
+                <viewController storyboardIdentifier="MembershipTypeSelectionViewController" id="ANp-qU-Cce" customClass="MembershipTypeSelectionViewController" customModule="DareToDonate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U7N-OA-HfL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="Dv2-5L-FDY">
+                                <rect key="frame" x="150" y="119" width="114" height="171"/>
+                                <color key="tintColor" red="1" green="0.12941176470588234" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Dv2-5L-FDY" secondAttribute="height" multiplier="2:3" id="bja-pm-7Pf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="Dare To Donate" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="YKq-MR-387">
+                                <rect key="frame" x="20" y="321" width="374" height="57.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YKq-MR-387" secondAttribute="height" multiplier="6.5:1" id="BDn-cJ-APU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="30"/>
+                                <color key="textColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="You can donate for ones in need and request blood if you need." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="HWF-fa-aef">
+                                <rect key="frame" x="20" y="432.5" width="374" height="68"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HWF-fa-aef" secondAttribute="height" multiplier="5.5:1" id="0a2-sF-HDT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="20"/>
+                                <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YB9-DR-IB2" customClass="UIRoundedButton" customModule="DareToDonate" customModuleProvider="target">
+                                <rect key="frame" x="20" y="589.5" width="374" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="YB9-DR-IB2" secondAttribute="height" multiplier="6.25:1" id="54v-wK-3f1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="22"/>
+                                <state key="normal" title="LOG IN">
+                                    <color key="titleColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9q-Q4-a9D" customClass="UIRoundedButton" customModule="DareToDonate" customModuleProvider="target">
+                                <rect key="frame" x="20" y="687.5" width="374" height="59.5"/>
+                                <color key="backgroundColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="p9q-Q4-a9D" secondAttribute="height" multiplier="6.25:1" id="ZAU-HG-9mZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="22"/>
+                                <state key="normal" title="REGISTER">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fwb-xI-hmy"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p9q-Q4-a9D" firstAttribute="leading" secondItem="fwb-xI-hmy" secondAttribute="leading" constant="20" id="33F-fZ-4tM"/>
+                            <constraint firstItem="YB9-DR-IB2" firstAttribute="centerX" secondItem="fwb-xI-hmy" secondAttribute="centerX" id="728-a6-V6U"/>
+                            <constraint firstItem="HWF-fa-aef" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fwb-xI-hmy" secondAttribute="leading" constant="20" id="Bkl-Jo-XVf"/>
+                            <constraint firstItem="YKq-MR-387" firstAttribute="top" secondItem="Dv2-5L-FDY" secondAttribute="bottom" constant="31" id="Cvi-Wd-An5"/>
+                            <constraint firstItem="Dv2-5L-FDY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="fwb-xI-hmy" secondAttribute="leading" constant="145" id="DAM-FO-dGG"/>
+                            <constraint firstItem="fwb-xI-hmy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="HWF-fa-aef" secondAttribute="trailing" constant="20" id="Ed4-MW-7qA"/>
+                            <constraint firstItem="Dv2-5L-FDY" firstAttribute="top" secondItem="U7N-OA-HfL" secondAttribute="top" constant="119" id="Krg-br-XX7"/>
+                            <constraint firstItem="p9q-Q4-a9D" firstAttribute="centerX" secondItem="fwb-xI-hmy" secondAttribute="centerX" id="Nvj-7J-TTs"/>
+                            <constraint firstItem="p9q-Q4-a9D" firstAttribute="top" secondItem="YB9-DR-IB2" secondAttribute="bottom" constant="38" id="OAb-zR-Fl9"/>
+                            <constraint firstItem="fwb-xI-hmy" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="p9q-Q4-a9D" secondAttribute="bottom" constant="20" id="QJd-Au-2Yh"/>
+                            <constraint firstItem="YKq-MR-387" firstAttribute="leading" secondItem="fwb-xI-hmy" secondAttribute="leading" constant="20" id="QQL-Sv-1eB"/>
+                            <constraint firstItem="YB9-DR-IB2" firstAttribute="leading" secondItem="fwb-xI-hmy" secondAttribute="leading" constant="20" id="Sh7-oB-IoM"/>
+                            <constraint firstItem="fwb-xI-hmy" firstAttribute="trailing" secondItem="p9q-Q4-a9D" secondAttribute="trailing" constant="20" id="TFT-74-TeD"/>
+                            <constraint firstItem="HWF-fa-aef" firstAttribute="top" secondItem="YKq-MR-387" secondAttribute="bottom" constant="54" id="VLf-0B-kcC"/>
+                            <constraint firstItem="fwb-xI-hmy" firstAttribute="trailing" secondItem="YKq-MR-387" secondAttribute="trailing" constant="20" id="a8V-fh-gg4"/>
+                            <constraint firstItem="fwb-xI-hmy" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dv2-5L-FDY" secondAttribute="trailing" constant="145" id="dJu-Mf-Bve"/>
+                            <constraint firstItem="fwb-xI-hmy" firstAttribute="trailing" secondItem="YB9-DR-IB2" secondAttribute="trailing" constant="20" id="k00-51-G60"/>
+                            <constraint firstItem="YKq-MR-387" firstAttribute="centerX" secondItem="fwb-xI-hmy" secondAttribute="centerX" id="mVx-oT-8SG"/>
+                            <constraint firstItem="HWF-fa-aef" firstAttribute="centerX" secondItem="fwb-xI-hmy" secondAttribute="centerX" id="nd5-9A-JCX"/>
+                            <constraint firstItem="YB9-DR-IB2" firstAttribute="top" secondItem="HWF-fa-aef" secondAttribute="bottom" priority="250" constant="89" id="tzY-Cv-8NQ"/>
+                            <constraint firstItem="Dv2-5L-FDY" firstAttribute="centerX" secondItem="fwb-xI-hmy" secondAttribute="centerX" id="xQq-1R-nbA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginButton" destination="YB9-DR-IB2" id="CvI-yF-nnh"/>
+                        <outlet property="registerButton" destination="p9q-Q4-a9D" id="U9F-ya-yFh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZOV-zZ-txJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="76.811594202898561" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash-Logo" width="114" height="171"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

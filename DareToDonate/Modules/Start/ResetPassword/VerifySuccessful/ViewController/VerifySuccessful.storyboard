@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Verify Successful View Controller-->
+        <scene sceneID="sL0-ie-gaR">
+            <objects>
+                <viewController storyboardIdentifier="VerifySuccessfulViewController" id="JUH-WH-7IC" customClass="VerifySuccessfulViewController" customModule="DareToDonate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A7K-GJ-Gvk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-success" translatesAutoresizingMaskIntoConstraints="NO" id="zJY-sy-d3g">
+                                <rect key="frame" x="70" y="163" width="274" height="228.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zJY-sy-d3g" secondAttribute="height" multiplier="6:5" id="3jY-pn-3lD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bXQ-iw-ojz" customClass="UIRoundedButton" customModule="DareToDonate" customModuleProvider="target">
+                                <rect key="frame" x="20" y="496.5" width="374" height="59.5"/>
+                                <color key="backgroundColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bXQ-iw-ojz" secondAttribute="height" multiplier="6.25:1" id="lua-WU-5RB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="22"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gmi-mZ-G73"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zJY-sy-d3g" firstAttribute="top" secondItem="A7K-GJ-Gvk" secondAttribute="top" constant="163" id="B27-Fs-ZLq"/>
+                            <constraint firstItem="bXQ-iw-ojz" firstAttribute="leading" secondItem="gmi-mZ-G73" secondAttribute="leading" constant="20" id="aFH-he-TJS"/>
+                            <constraint firstItem="gmi-mZ-G73" firstAttribute="trailing" secondItem="zJY-sy-d3g" secondAttribute="trailing" constant="70" id="h3y-bq-c9m"/>
+                            <constraint firstItem="gmi-mZ-G73" firstAttribute="trailing" secondItem="bXQ-iw-ojz" secondAttribute="trailing" constant="20" id="kgX-sh-SKQ"/>
+                            <constraint firstItem="zJY-sy-d3g" firstAttribute="leading" secondItem="gmi-mZ-G73" secondAttribute="leading" constant="70" id="lA0-mG-Tp4"/>
+                            <constraint firstItem="bXQ-iw-ojz" firstAttribute="top" secondItem="zJY-sy-d3g" secondAttribute="bottom" constant="105" id="zRh-Vi-zfI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="finishButton" destination="bXQ-iw-ojz" id="4Fj-D6-0fF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zzk-iY-AAJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86.956521739130437" y="158.70535714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic-success" width="274.5" height="228"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

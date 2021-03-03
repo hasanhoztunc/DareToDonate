@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Report View Controller-->
+        <scene sceneID="deR-Rb-eqt">
+            <objects>
+                <viewController storyboardIdentifier="ReportViewController" id="3Vb-Fh-Ndt" customClass="ReportViewController" customModule="DareToDonate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GjF-IY-ooN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="eJ7-1I-md6">
+                                <rect key="frame" x="93" y="38" width="228" height="57"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nns-4E-ajS">
+                                        <rect key="frame" x="40" y="0.0" width="148.5" height="24"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-location" translatesAutoresizingMaskIntoConstraints="NO" id="UxR-Ri-PVd">
+                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Research Center" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="KYM-IQ-WYQ">
+                                                <rect key="frame" x="31" y="0.0" width="117.5" height="24"/>
+                                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                                <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="UxR-Ri-PVd" firstAttribute="height" secondItem="KYM-IQ-WYQ" secondAttribute="height" id="mRd-6N-KC2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dhaka Medical College, Dhaka" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="jjJ-Bs-YXY">
+                                        <rect key="frame" x="6.5" y="33" width="215.5" height="24"/>
+                                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                                        <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-testtube" translatesAutoresizingMaskIntoConstraints="NO" id="2af-Aj-9Gf">
+                                <rect key="frame" x="69" y="138" width="276" height="332"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X5R-Rh-BBv" customClass="UIRoundedButton" customModule="DareToDonate" customModuleProvider="target">
+                                <rect key="frame" x="113" y="795" width="188" height="44"/>
+                                <color key="backgroundColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="X5R-Rh-BBv" secondAttribute="height" multiplier="4.27:1" id="SJL-YE-7NM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="22"/>
+                                <state key="normal" title="My Report">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <collectionView multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="tA5-qX-tpA">
+                                <rect key="frame" x="20" y="522" width="374" height="201"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="tA5-qX-tpA" secondAttribute="height" multiplier="1.8607:1" id="32m-M5-WBS"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Tw0-Ui-laW">
+                                    <size key="itemSize" width="114" height="87"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KZd-P7-BSc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KZd-P7-BSc" firstAttribute="trailing" secondItem="tA5-qX-tpA" secondAttribute="trailing" constant="20" id="5UV-EG-IN2"/>
+                            <constraint firstItem="X5R-Rh-BBv" firstAttribute="top" secondItem="tA5-qX-tpA" secondAttribute="bottom" constant="72" id="7dC-dH-d7e"/>
+                            <constraint firstItem="tA5-qX-tpA" firstAttribute="top" secondItem="2af-Aj-9Gf" secondAttribute="bottom" constant="52" id="9rJ-LQ-qpp"/>
+                            <constraint firstItem="KZd-P7-BSc" firstAttribute="trailing" secondItem="2af-Aj-9Gf" secondAttribute="trailing" constant="69" id="Ekr-D8-DOi"/>
+                            <constraint firstItem="2af-Aj-9Gf" firstAttribute="leading" secondItem="KZd-P7-BSc" secondAttribute="leading" constant="69" id="IKZ-Nm-pbE"/>
+                            <constraint firstItem="X5R-Rh-BBv" firstAttribute="leading" secondItem="KZd-P7-BSc" secondAttribute="leading" constant="113" id="Rv2-YZ-K8v"/>
+                            <constraint firstItem="2af-Aj-9Gf" firstAttribute="top" secondItem="eJ7-1I-md6" secondAttribute="bottom" constant="43" id="VRd-MS-j5S"/>
+                            <constraint firstAttribute="bottom" secondItem="X5R-Rh-BBv" secondAttribute="bottom" constant="57" id="XSf-UJ-eIs"/>
+                            <constraint firstItem="eJ7-1I-md6" firstAttribute="leading" secondItem="KZd-P7-BSc" secondAttribute="leading" constant="93" id="Z13-mc-Gdf"/>
+                            <constraint firstItem="KZd-P7-BSc" firstAttribute="trailing" secondItem="eJ7-1I-md6" secondAttribute="trailing" constant="93" id="crm-mo-Qr8"/>
+                            <constraint firstItem="KZd-P7-BSc" firstAttribute="trailing" secondItem="X5R-Rh-BBv" secondAttribute="trailing" constant="113" id="onG-0E-zEw"/>
+                            <constraint firstItem="tA5-qX-tpA" firstAttribute="leading" secondItem="KZd-P7-BSc" secondAttribute="leading" constant="20" id="qVL-w3-jW4"/>
+                            <constraint firstItem="eJ7-1I-md6" firstAttribute="top" secondItem="GjF-IY-ooN" secondAttribute="top" constant="38" id="uUa-LW-Oep"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="tA5-qX-tpA" id="0E8-lk-GBl"/>
+                        <outlet property="locationLabel" destination="jjJ-Bs-YXY" id="hjI-OA-2Cf"/>
+                        <outlet property="locationTitleLabel" destination="KYM-IQ-WYQ" id="0FU-Rx-wif"/>
+                        <outlet property="myReportButton" destination="X5R-Rh-BBv" id="TdY-ym-IMl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xld-ej-cAW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4.3478260869565224" y="106.47321428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic-location" width="24" height="24"/>
+        <image name="ic-testtube" width="276" height="263.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

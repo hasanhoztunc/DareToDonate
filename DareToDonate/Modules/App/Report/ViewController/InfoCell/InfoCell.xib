@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="InfoCell" id="MtR-pM-2ce" customClass="InfoCell" customModule="DareToDonate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="116" height="87"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="6ux-XG-7aZ">
+                <rect key="frame" x="0.0" y="0.0" width="116" height="87"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glucose" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="k7q-uW-kON">
+                        <rect key="frame" x="23" y="48" width="66" height="23"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="16"/>
+                        <color key="textColor" red="0.69411764705882351" green="0.69411764705882351" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 mmol/L" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wuT-E9-fSH">
+                        <rect key="frame" x="15" y="11" width="86" height="26"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                        <color key="textColor" red="0.15294117647058825" green="0.16470588235294117" blue="0.18431372549019609" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="k7q-uW-kON" secondAttribute="bottom" constant="16" id="34e-CI-d05"/>
+                    <constraint firstItem="k7q-uW-kON" firstAttribute="leading" secondItem="6ux-XG-7aZ" secondAttribute="leading" constant="23" id="Ax6-3J-Z6l"/>
+                    <constraint firstItem="wuT-E9-fSH" firstAttribute="leading" secondItem="6ux-XG-7aZ" secondAttribute="leading" constant="15" id="C7d-wL-iOZ"/>
+                    <constraint firstItem="k7q-uW-kON" firstAttribute="top" secondItem="wuT-E9-fSH" secondAttribute="bottom" constant="11" id="CsL-JV-AZC"/>
+                    <constraint firstItem="wuT-E9-fSH" firstAttribute="top" secondItem="6ux-XG-7aZ" secondAttribute="top" constant="11" id="WxY-HK-7ZV"/>
+                    <constraint firstAttribute="trailing" secondItem="wuT-E9-fSH" secondAttribute="trailing" constant="15" id="cre-QA-bvb"/>
+                    <constraint firstAttribute="trailing" secondItem="k7q-uW-kON" secondAttribute="trailing" constant="27" id="lea-Vd-hhR"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="infoTitleLabel" destination="k7q-uW-kON" id="aHR-04-g8r"/>
+                <outlet property="infoValueLabel" destination="wuT-E9-fSH" id="aUt-Uh-IGP"/>
+            </connections>
+            <point key="canvasLocation" x="-3" y="124"/>
+        </collectionViewCell>
+    </objects>
+</document>

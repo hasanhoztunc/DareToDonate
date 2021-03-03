@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Verify View Controller-->
+        <scene sceneID="aDz-B4-WsV">
+            <objects>
+                <viewController storyboardIdentifier="VerifyViewController" id="8US-d2-kKa" customClass="VerifyViewController" customModule="DareToDonate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="013-em-oef">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="taL-mn-MMP">
+                                <rect key="frame" x="49" y="268.5" width="317" height="65"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PcG-GK-2Bd" customClass="UIRoundedTextField" customModule="DareToDonate" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="PcG-GK-2Bd" secondAttribute="height" multiplier="1:1" id="oNe-aQ-EUM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kmf-tY-Sny" customClass="UIRoundedTextField" customModule="DareToDonate" customModuleProvider="target">
+                                        <rect key="frame" x="84" y="0.0" width="65" height="65"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Kmf-tY-Sny" secondAttribute="height" multiplier="1:1" id="Zcs-XF-ucV"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hwt-j2-BFF" customClass="UIRoundedTextField" customModule="DareToDonate" customModuleProvider="target">
+                                        <rect key="frame" x="168" y="0.0" width="65" height="65"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="hwt-j2-BFF" secondAttribute="height" multiplier="1:1" id="32n-6F-CAE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYJ-OQ-tVy" customClass="UIRoundedTextField" customModule="DareToDonate" customModuleProvider="target">
+                                        <rect key="frame" x="252" y="0.0" width="65" height="65"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="sYJ-OQ-tVy" secondAttribute="height" multiplier="1:1" id="zNA-8y-aQy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="40"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resend Code 49 Sec" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qn7-tX-7vT">
+                                <rect key="frame" x="20" y="378.5" width="374" height="28.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Qn7-tX-7vT" secondAttribute="height" multiplier="13:1" id="h7F-Wf-UFj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnS-2p-zeu" customClass="UIRoundedButton" customModule="DareToDonate" customModuleProvider="target">
+                                <rect key="frame" x="20" y="423" width="374" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cnS-2p-zeu" secondAttribute="height" multiplier="6.25:1" id="CCF-Ja-f4o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="22"/>
+                                <state key="normal" title="Verify">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AhD-Jf-YO6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cnS-2p-zeu" firstAttribute="top" secondItem="Qn7-tX-7vT" secondAttribute="bottom" constant="16" id="0Ou-H4-JB4"/>
+                            <constraint firstItem="cnS-2p-zeu" firstAttribute="leading" secondItem="AhD-Jf-YO6" secondAttribute="leading" constant="20" id="4PH-I9-dc8"/>
+                            <constraint firstItem="AhD-Jf-YO6" firstAttribute="trailing" secondItem="Qn7-tX-7vT" secondAttribute="trailing" constant="20" id="Bwt-hX-Xdy"/>
+                            <constraint firstItem="taL-mn-MMP" firstAttribute="leading" secondItem="AhD-Jf-YO6" secondAttribute="leading" constant="49" id="DCx-x1-Uso"/>
+                            <constraint firstItem="cnS-2p-zeu" firstAttribute="centerY" secondItem="AhD-Jf-YO6" secondAttribute="centerY" id="UTM-JK-ndh"/>
+                            <constraint firstItem="AhD-Jf-YO6" firstAttribute="trailing" secondItem="cnS-2p-zeu" secondAttribute="trailing" constant="20" id="Zgc-di-CWM"/>
+                            <constraint firstItem="Qn7-tX-7vT" firstAttribute="top" secondItem="taL-mn-MMP" secondAttribute="bottom" constant="45" id="jas-1k-kZF"/>
+                            <constraint firstItem="Qn7-tX-7vT" firstAttribute="leading" secondItem="AhD-Jf-YO6" secondAttribute="leading" constant="20" id="mkz-Oe-DAV"/>
+                            <constraint firstItem="AhD-Jf-YO6" firstAttribute="trailing" secondItem="taL-mn-MMP" secondAttribute="trailing" constant="48" id="pMu-uS-jSN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="digit1TextField" destination="PcG-GK-2Bd" id="YHr-y9-ws2"/>
+                        <outlet property="digit2TextField" destination="Kmf-tY-Sny" id="Vfo-vy-lga"/>
+                        <outlet property="digit3TextField" destination="hwt-j2-BFF" id="bYw-Rv-Zmd"/>
+                        <outlet property="digit4TextField" destination="sYJ-OQ-tVy" id="hXR-ua-eBs"/>
+                        <outlet property="resendCodeLabel" destination="Qn7-tX-7vT" id="2am-KV-yJC"/>
+                        <outlet property="verifyButton" destination="cnS-2p-zeu" id="aR3-nA-9cV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ny3-Qf-OMk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14" y="149"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

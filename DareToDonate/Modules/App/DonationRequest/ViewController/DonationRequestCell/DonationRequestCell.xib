@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+        <array key="Poppins-Regular.ttf">
+            <string>Poppins-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DonationRequestCell" id="KGk-i7-Jjw" customClass="DonationRequestCell" customModule="DareToDonate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="146"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uWO-AP-NLK">
+                        <rect key="frame" x="26" y="10" width="43" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <color key="textColor" red="0.49411764705882355" green="0.49411764705882355" blue="0.49411764705882355" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4m5-6N-owo">
+                        <rect key="frame" x="25" y="60" width="60" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="14"/>
+                        <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hasan Oztunc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="OEE-NF-Cpn">
+                        <rect key="frame" x="26" y="32" width="99" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <color key="textColor" red="0.1529411765" green="0.1647058824" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Hastahanesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bwf-Qv-2Pa">
+                        <rect key="frame" x="25" y="82" width="122" height="20"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <color key="textColor" red="0.1529411765" green="0.1647058824" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5 Min Ago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkw-yH-Lyt">
+                        <rect key="frame" x="24" y="117" width="64" height="19"/>
+                        <fontDescription key="fontDescription" name="Poppins-Regular" family="Poppins" pointSize="13"/>
+                        <color key="textColor" red="0.1529411765" green="0.1647058824" blue="0.1843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic-bloodgroup" translatesAutoresizingMaskIntoConstraints="NO" id="ArT-p1-2PH">
+                        <rect key="frame" x="320" y="20" width="38" height="55"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="5oV-9R-uje"/>
+                            <constraint firstAttribute="height" constant="55" id="EqU-8Q-2MG"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G6i-AG-3yH">
+                        <rect key="frame" x="292" y="102" width="66" height="38"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="18"/>
+                        <state key="normal" title="Donate">
+                            <color key="titleColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfR-G7-IXU">
+                        <rect key="frame" x="323" y="43" width="32" height="31"/>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="22"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="4m5-6N-owo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="0bu-Zc-cx1"/>
+                    <constraint firstItem="vfR-G7-IXU" firstAttribute="bottom" secondItem="ArT-p1-2PH" secondAttribute="bottom" constant="-1" id="4nL-PY-eR0"/>
+                    <constraint firstItem="dkw-yH-Lyt" firstAttribute="top" secondItem="bwf-Qv-2Pa" secondAttribute="bottom" constant="15" id="8i0-LK-EUH"/>
+                    <constraint firstItem="uWO-AP-NLK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="9vt-Yy-cRt"/>
+                    <constraint firstAttribute="trailing" secondItem="ArT-p1-2PH" secondAttribute="trailing" constant="16" id="DQJ-dj-NHF"/>
+                    <constraint firstItem="ArT-p1-2PH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="Gh7-Vh-Bui"/>
+                    <constraint firstItem="OEE-NF-Cpn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="Onl-vt-0IY"/>
+                    <constraint firstItem="vfR-G7-IXU" firstAttribute="leading" secondItem="ArT-p1-2PH" secondAttribute="leading" constant="3" id="QAu-DS-8Jt"/>
+                    <constraint firstItem="uWO-AP-NLK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="RGx-Cx-NfX"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bwf-Qv-2Pa" secondAttribute="trailing" constant="25" id="VY0-oq-lpX"/>
+                    <constraint firstItem="bwf-Qv-2Pa" firstAttribute="top" secondItem="4m5-6N-owo" secondAttribute="bottom" constant="2" id="Voj-yp-x33"/>
+                    <constraint firstItem="4m5-6N-owo" firstAttribute="top" secondItem="OEE-NF-Cpn" secondAttribute="bottom" constant="8" id="WKZ-hl-oe8"/>
+                    <constraint firstAttribute="trailing" secondItem="G6i-AG-3yH" secondAttribute="trailing" constant="16" id="Y3q-UU-cDb"/>
+                    <constraint firstItem="dkw-yH-Lyt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="elz-Ov-z7I"/>
+                    <constraint firstAttribute="bottom" secondItem="dkw-yH-Lyt" secondAttribute="bottom" constant="10" id="lCM-MY-fgZ"/>
+                    <constraint firstItem="ArT-p1-2PH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OEE-NF-Cpn" secondAttribute="trailing" constant="25" id="lQa-nf-gR5"/>
+                    <constraint firstItem="OEE-NF-Cpn" firstAttribute="top" secondItem="uWO-AP-NLK" secondAttribute="bottom" constant="2" id="mzN-BC-oCs"/>
+                    <constraint firstItem="bwf-Qv-2Pa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="sH9-ZQ-uuc"/>
+                    <constraint firstAttribute="bottom" secondItem="G6i-AG-3yH" secondAttribute="bottom" constant="6" id="veP-jh-x0l"/>
+                    <constraint firstItem="vfR-G7-IXU" firstAttribute="trailing" secondItem="ArT-p1-2PH" secondAttribute="trailing" constant="-3" id="wMJ-Mp-11Z"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bloodTypeLabel" destination="vfR-G7-IXU" id="XPY-TE-9Sn"/>
+                <outlet property="donateButton" destination="G6i-AG-3yH" id="sab-6C-S8E"/>
+                <outlet property="locationLabel" destination="bwf-Qv-2Pa" id="gIU-NE-Y5b"/>
+                <outlet property="nameLabel" destination="OEE-NF-Cpn" id="kzH-cf-ezd"/>
+                <outlet property="timeLabel" destination="dkw-yH-Lyt" id="ctm-Do-zGR"/>
+            </connections>
+            <point key="canvasLocation" x="37.681159420289859" y="100.44642857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic-bloodgroup" width="38" height="55"/>
+    </resources>
+</document>

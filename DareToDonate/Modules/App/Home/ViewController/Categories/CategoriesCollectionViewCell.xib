@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoriesCollectionViewCell" id="6f5-rX-fNg" customClass="CategoriesCollectionViewCell" customModule="DareToDonate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hfY-AR-N08">
+                <rect key="frame" x="0.0" y="0.0" width="111" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ika-JC-g39">
+                        <rect key="frame" x="34" y="16" width="43" height="43"/>
+                        <color key="tintColor" red="1" green="0.12941176469999999" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ika-JC-g39" secondAttribute="height" multiplier="1:1" id="cEb-4k-Sib"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find Donors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="CHZ-vb-sYr">
+                        <rect key="frame" x="8" y="74" width="95" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="CHZ-vb-sYr" secondAttribute="height" multiplier="3.8:1" id="REa-1M-7S2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="14"/>
+                        <color key="textColor" red="0.4941176471" green="0.4941176471" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="ika-JC-g39" firstAttribute="leading" secondItem="hfY-AR-N08" secondAttribute="leading" constant="34" id="1l4-th-VyN"/>
+                    <constraint firstAttribute="trailing" secondItem="CHZ-vb-sYr" secondAttribute="trailing" constant="8" id="Dzw-BZ-wUF"/>
+                    <constraint firstAttribute="trailing" secondItem="ika-JC-g39" secondAttribute="trailing" constant="34" id="HzG-e9-Bb1"/>
+                    <constraint firstItem="CHZ-vb-sYr" firstAttribute="leading" secondItem="hfY-AR-N08" secondAttribute="leading" constant="8" id="K0S-29-8hy"/>
+                    <constraint firstItem="ika-JC-g39" firstAttribute="top" secondItem="hfY-AR-N08" secondAttribute="top" constant="16" id="XXw-nB-4eX"/>
+                    <constraint firstAttribute="bottom" secondItem="CHZ-vb-sYr" secondAttribute="bottom" constant="12" id="krM-dX-HcW"/>
+                    <constraint firstItem="CHZ-vb-sYr" firstAttribute="top" secondItem="ika-JC-g39" secondAttribute="bottom" constant="15" id="ybL-mP-Db3"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="111" height="111"/>
+            <connections>
+                <outlet property="imageView" destination="ika-JC-g39" id="aqJ-IA-MVp"/>
+                <outlet property="titleLabel" destination="CHZ-vb-sYr" id="mwn-bP-L0m"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="31.138392857142854"/>
+        </collectionViewCell>
+    </objects>
+</document>
